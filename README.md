@@ -42,7 +42,11 @@ mcp-server/     # MCP 协议服务层
 cd frontend && npm install && npm run dev
 ```
 
-详细启动文档：[快速启动](https://ragcom.com/ragcom/local-dev/)
+详细启动文档：https://ragcom.com/ragcom/local-dev/
+
+## 鸣谢
+
+本项目基于 [Ragcom](https://github.com/ragcom/ragcom) 开源项目改编，感谢原作者的开源贡献。
 
 ## 项目规模
 
