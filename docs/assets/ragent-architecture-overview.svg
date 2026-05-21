@@ -1,6 +1,6 @@
 <svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">RAgent architecture overview</title>
-  <desc id="desc">Runtime topology and core modules for RAgent including frontend, Spring Boot services, RAG core, ingestion engine, AI infra and storage dependencies.</desc>
+  <title id="title">Ragcom architecture overview</title>
+  <desc id="desc">Runtime topology and core modules for Ragcom including frontend, Spring Boot services, RAG core, ingestion engine, AI infra and storage dependencies.</desc>
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="900" gradientUnits="userSpaceOnUse">
@@ -33,7 +33,7 @@
   <rect width="1400" height="900" fill="url(#bg)"/>
   <rect width="1400" height="900" fill="url(#grid)" opacity="0.55"/>
 
-  <text x="60" y="72" fill="#E6F1FF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700">RAgent :: Runtime Architecture</text>
+  <text x="60" y="72" fill="#E6F1FF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700">Ragcom :: Runtime Architecture</text>
   <text x="60" y="106" fill="#8EA0B8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">RAG + MCP + Ingestion Pipeline + Model Routing (Monorepo)</text>
 
   <!-- Edge -->
@@ -50,7 +50,7 @@
   <g>
     <rect x="390" y="140" width="570" height="700" rx="22" fill="#0B1525" stroke="#2D3F61" stroke-width="1.2"/>
     <text x="420" y="180" fill="#D9E7FF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="700">bootstrap :: Spring Boot App</text>
-    <text x="420" y="206" fill="#7F95B4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">context-path = /api/ragent</text>
+    <text x="420" y="206" fill="#7F95B4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">context-path = /api/ragcom</text>
 
     <rect x="420" y="228" width="510" height="74" rx="14" fill="#0F1E33" stroke="#4E6AA3"/>
     <text x="440" y="254" fill="#AFC7FF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">Controllers / APIs</text>
@@ -149,5 +149,5 @@
   <text x="972" y="750" fill="#79EFFF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">persistence</text>
 
   <!-- footer -->
-  <text x="60" y="862" fill="#6D819F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">Generated as editable SVG for README. Tweak in docs/assets/ragent-architecture-overview.svg</text>
+  <text x="60" y="862" fill="#6D819F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">Generated as editable SVG for README. Tweak in docs/assets/ragcom-architecture-overview.svg</text>
 </svg>

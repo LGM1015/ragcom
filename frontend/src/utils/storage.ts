@@ -1,8 +1,8 @@
 import type { User } from "@/types";
 
-const TOKEN_KEY = "ragent_token";
-const USER_KEY = "ragent_user";
-const THEME_KEY = "ragent_theme";
+const TOKEN_KEY = "ragcom_token";
+const USER_KEY = "ragcom_user";
+const THEME_KEY = "ragcom_theme";
 
 function safeGet(key: string) {
   try {

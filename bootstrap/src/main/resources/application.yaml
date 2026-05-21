@@ -1,11 +1,11 @@
 server:
   port: 9090
   servlet:
-    context-path: /api/ragent
+    context-path: /api/ragcom
 
 spring:
   application:
-    name: ragent${unique-name:}-service
+    name: ragcom${unique-name:}-service
 
   servlet:
     multipart:
@@ -17,14 +17,14 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     username: postgres
     password: postgres
-    url: jdbc:postgresql://127.0.0.1:5432/ragent?client_encoding=UTF8
+    url: jdbc:postgresql://127.0.0.1:5432/ragcom?client_encoding=UTF8
     hikari:
       connection-timeout: 5000
       idle-timeout: 600000
       max-lifetime: 1800000
       maximum-pool-size: 10
       minimum-idle: 5
-      pool-name: RagentHikariPool
+      pool-name: RagcomHikariPool
 
   data:
     redis:
@@ -35,7 +35,7 @@ spring:
 rocketmq:
   name-server: 127.0.0.1:9876
   producer:
-    group: ragent-producer${unique-name:}_pg
+    group: ragcom-producer${unique-name:}_pg
     send-message-timeout: 2000
 
 milvus:
@@ -116,7 +116,7 @@ ai:
         rerank: /api/v1/services/rerank/text-rerank/text-rerank
     siliconflow:
       url: https://api.siliconflow.cn
-      api-key: ${SILICONFLOW_API_KEY:}
+      api-key: sk-ivzbrujkmubllicbibjfymnqkpsbcpwmgxyowxmvkqgmevfz
       endpoints:
         chat: /v1/chat/completions
         embedding: /v1/embeddings
