@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: ragcom-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ragcom
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7
+    container_name: ragcom-redis
+    command: redis-server --requirepass 123456
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  rocketmq:
+    image: apache/rocketmq:5.2.0
+    container_name: ragcom-rocketmq
+    ports:
+      - "9876:9876"
+      - "10911:10911"
+    environment:
+      JAVA_OPTS: "-Duser.home=/opt/rocketmq-5.2.0"
+    volumes:
+      - rocketmq_data:/home/rocketmq/store
+    command: sh mqnamesrv
+
+volumes:
+  postgres_data:
+  redis_data:
+  rocketmq_data:
