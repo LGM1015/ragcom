@@ -1,4 +1,4 @@
-# RAG Agent
+# Ragent
 
 企业级 Agentic RAG 平台，基于 Spring Boot 与 React 构建，覆盖从文档解析、智能分块、多路检索到流式问答的完整链路。
 
@@ -42,11 +42,11 @@ mcp-server/     # MCP 协议服务层
 cd frontend && npm install && npm run dev
 ```
 
-详细启动文档：https://ragcom.com/ragcom/local-dev/
+详细启动文档：https://nageoffer.com/ragent
 
 ## 鸣谢
 
-本项目基于 [Ragcom](https://github.com/ragcom/ragcom) 开源项目改编，感谢原作者的开源贡献。
+本项目基于 [Ragent](https://github.com/nageoffer/ragent) 开源项目改编，感谢原作者的开源贡献。
 
 ## 项目规模
 
